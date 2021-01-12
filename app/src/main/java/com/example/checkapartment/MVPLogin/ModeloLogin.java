@@ -9,7 +9,7 @@ public class ModeloLogin {
 
 
 public void validarPassword(String clave){
-        if (password != clave) {
+        if (!clave.equals(password)) {
             mensaje = "password incorrect";
             contador++;
         }
