@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.checkapartment">
-
+<uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,10 +11,6 @@
         android:theme="@style/Theme.CheckApartment">
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login"
-            android:theme="@style/Theme.CheckApartment.NoActionBar"></activity>
-        <activity
-            android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.CheckApartment.NoActionBar">
             <intent-filter>
@@ -22,6 +18,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.CheckApartment.NoActionBar">
+
         </activity>
     </application>
 

@@ -2,6 +2,7 @@ package com.example.checkapartment;
 
 import android.os.Bundle;
 
+import com.example.checkapartment.MVPLogin.ILogin;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -10,7 +11,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity implements ILogin {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,5 +28,20 @@ public class LoginActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    @Override
+    public void validarPassword(String password) {
+
+    }
+
+    @Override
+    public String mensajeLoging() {
+        return null;
+    }
+
+    @Override
+    public int contadorLogin() {
+        return 0;
     }
 }
