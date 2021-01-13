@@ -17,7 +17,7 @@ import com.example.checkapartment.databinding.FragmentFirstBinding;
 
 public class FirstFragment extends Fragment implements IAdapter {
     private FragmentFirstBinding binding;
-    private ApartmentData apartmentData;
+    private ApartmentData apartmentData = new ApartmentData();
 
     @Override
     public View onCreateView(
@@ -26,9 +26,8 @@ public class FirstFragment extends Fragment implements IAdapter {
     ) {
         binding = FragmentFirstBinding.inflate(inflater, container, false);
         AdapterList adapterList = new AdapterList(apartmentData.apartmentList(),this);
-        binding.rv.setLayoutManager(new LinearLayoutManager(getContext()));
         binding.rv.setAdapter(adapterList);
-
+        binding.rv.setLayoutManager(new LinearLayoutManager(getContext()));
         return binding.getRoot();
     }
 
