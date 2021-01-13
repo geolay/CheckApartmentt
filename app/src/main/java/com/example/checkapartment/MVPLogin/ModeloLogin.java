@@ -27,7 +27,3 @@ public void validarPassword(String clave){
     }
 }
 
-   // Si es exitosa, debe llevar a una segunda actividad. Si no, debe
-   //     indicar que el password no es el indicado, debe tener un contador
-   //     de errores, si alcanza los tres intentos, debe bloquear el Button de
-   //     ingreso. Teniendo que reiniciar la app para intentarlo otra vez.

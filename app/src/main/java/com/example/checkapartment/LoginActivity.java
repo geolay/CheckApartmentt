@@ -1,5 +1,6 @@
 package com.example.checkapartment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.checkapartment.MVPLogin.ILogin;
@@ -37,6 +38,9 @@ public class LoginActivity extends AppCompatActivity implements ILogin {
                 if (contadorLogin() == 3) {
                     binding.button.setEnabled(false);
                 }
+                if (mensajeLoging().equals("validada")){
+                    onIntent();
+                }
             }
         });
     }
@@ -56,5 +60,10 @@ public class LoginActivity extends AppCompatActivity implements ILogin {
     @Override
     public int contadorLogin() {
         return presentador.contadorLogin();
+    }
+    public void onIntent(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+
     }
 }
