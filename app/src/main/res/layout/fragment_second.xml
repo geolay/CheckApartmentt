@@ -41,52 +41,52 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <CheckBox
-        android:id="@+id/cBLuces"
+        android:id="@+id/cbLuces"
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="42dp"
         android:layout_marginEnd="16dp"
-        android:text="CheckBox"
+        android:text="Luces"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvNameEdificio" />
 
     <CheckBox
-        android:id="@+id/cBDormitorio"
+        android:id="@+id/cbDormitorio"
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
-        android:text="CheckBox"
+        android:text="Dormitorio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cBLuces" />
+        app:layout_constraintTop_toBottomOf="@+id/cbLuces" />
 
     <CheckBox
-        android:id="@+id/cBCocina"
+        android:id="@+id/cbCocina"
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
-        android:text="CheckBox"
+        android:text="Cocina"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cBDormitorio" />
+        app:layout_constraintTop_toBottomOf="@+id/cbDormitorio" />
 
     <CheckBox
-        android:id="@+id/cBBaño"
+        android:id="@+id/cbBaño"
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
-        android:text="CheckBox"
+        android:text="Baño"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cBCocina" />
+        app:layout_constraintTop_toBottomOf="@+id/cbCocina" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -97,25 +97,25 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cBBaño">
+        app:layout_constraintTop_toBottomOf="@+id/cbBaño">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/rbNormal"
             android:layout_width="match_parent"
             android:layout_height="25dp"
-            android:text="RadioButton" />
+            android:text="Estado Termnaciones Normal" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/rbRegular"
             android:layout_width="match_parent"
             android:layout_height="25dp"
-            android:text="RadioButton" />
+            android:text="Estado Teminaciones Regular" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/rbMalas"
             android:layout_width="match_parent"
             android:layout_height="25dp"
-            android:text="RadioButton" />
+            android:text="Estado Terminaciones Malas" />
     </RadioGroup>
 
     <TextView
@@ -125,29 +125,28 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:text="TextView"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btGuardar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
-        android:text="Button"
+        android:text="Guardar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvPuntajeObtenido" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btEnviarAlerta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="40dp"
-        android:text="Button"
+        android:text="Enviar Alerta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvPuntajeObtenido" />
 </androidx.constraintlayout.widget.ConstraintLayout>
