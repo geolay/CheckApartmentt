@@ -45,7 +45,6 @@ public class LoginActivity extends AppCompatActivity implements ILogin {
     @Override
     public void validarPassword(String password) {
         presentador.validarPassword(password);
-
     }
 
     @Override

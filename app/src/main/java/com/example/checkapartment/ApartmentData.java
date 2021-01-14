@@ -19,8 +19,8 @@ public class ApartmentData {
         Apartment apartment11 = new Apartment("Edificio Andes Los Leones","Torre 1", "depto 102", "Los Leones 2006, Providencia", "http://andeslosleones.cl/img/fotos/edificio-andesleones01-b.jpg");
         Apartment apartment12 = new Apartment("Edificio Andes Los Leones","Torre 1", "depto 103", "Los Leones 2006, Providencia", "http://andeslosleones.cl/img/fotos/edificio-andesleones01-b.jpg");
         Apartment apartment13 = new Apartment("Edificio Andes Los Leones","Torre 1", "depto 104", "Los Leones 2006, Providencia", "http://andeslosleones.cl/img/fotos/edificio-andesleones01-b.jpg");
-        Apartment apartment14 = new Apartment("Edificio Andes Los Leones","Torre 2", "depto 201", "Los Leones 2006, Providencia", "http://andeslosleones.cl/img/fotos/edificio-andesleones01-b.jpg");
-        Apartment apartment15 = new Apartment("Edificio Andes Los Leones","Torre 2", "depto 202", "Los Leones 2006, Providencia", "http://andeslosleones.cl/img/fotos/edificio-andesleones01-b.jpg");
+        Apartment apartment14 = new Apartment("Edificio Andes Los Leones","Torre 1", "depto 201", "Los Leones 2006, Providencia", "http://andeslosleones.cl/img/fotos/edificio-andesleones01-b.jpg");
+        Apartment apartment15 = new Apartment("Edificio Andes Los Leones","Torre 1", "depto 202", "Los Leones 2006, Providencia", "http://andeslosleones.cl/img/fotos/edificio-andesleones01-b.jpg");
         apartmentList.add(apartment01);
         apartmentList.add(apartment02);
         apartmentList.add(apartment03);

@@ -7,7 +7,6 @@ public class ModeloLogin {
     private String mensaje;
     private int contador=0;
 
-
 public void validarPassword(String clave){
         if (!clave.equals(password)) {
             mensaje = "password incorrect";
